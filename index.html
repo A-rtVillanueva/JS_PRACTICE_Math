@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Excercise 1</title>
+</head>
+<body>
+    <div class="container">
+<h1>Math Methods</h1>
+   <details ontoggle="message1()">
+    <summary>
+        <u> Instructions </u>
+        <i id="ans"> </i>
+    </summary>
+    </details>
+</div>
+<div class="container">
+    <Input type="number" clas="form-control" id="num1">
+        <button type="button" class="btn btn-success" onclick="RndResult()"> Round it off!</button>
+        <button type="button" class="btn btn_success" onclick="AbsResult()">Absolute Power!</button>
+        <button type="button" class="btn btn_success" onclick="sqrtResult()">Get the Square Root!</button>    
+        <button type="button" class="btn btn_success" onclick="powResult()">Get the Power!</button>
+        <button type="button" class="btn btn_success" onclick="minResult()">Get the Minimum!</button>
+        <button type="button" class="btn btn_success" onclick="maxResult()">Get the Maxiumum!</button>
+        <button type="button" class="btn btn_success" onclick="ceilResult()">Get the Ceiling!</button>
+        <button type="button" class="btn btn_success" onclick="floorResult()">Get the Floor!</button>
+        <button type="button" class="btn btn_success" onclick="randomResult()">Get the Random!</button>
+
+        <br><br><kbd Id="result1">Answer is...</kbd>
+    </div>
+<script>
+    function message1() {
+        document.getElementById("ans").innerHTML = "Input one number then click the button below.";
+    }
+    function RndResult(){
+var rnd = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.round
+(rnd);
+    }
+    function AbsResult(){
+var abs = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.abs
+(abs);
+    }
+    function sqrtResult(){
+var sqrt = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.sqrt
+(sqrt);
+    }
+    function powResult(){
+var pow = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.pow
+(pow);
+    }
+    function floorResult(){
+var floor = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.floor
+(floor);
+    }
+    function ceilResult(){
+var ceil = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.ceil
+(ceil);
+    }
+    function randomResult(){
+var random = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.random
+(random);
+    }
+    function minResult(){
+var min = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.min
+(min);
+    }
+    function maxResult(){
+var max = document.getElementById("num1").value;
+document.getElementById("result1").innerHTML = Math.max
+(max);
+    }
+    </script>
+</body>
+</html>
